@@ -35,7 +35,7 @@ export default {
             $(document).ready(() => {
                 $('#slideshow .slick').slick({
                     arrows: false,
-                    dots: true,
+                    dots: false,
                     autoplay: true,
                     autoplaySpeed: 4000,
                     fade: true,

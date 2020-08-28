@@ -3,7 +3,7 @@ export default {
 
     template: `
     <div>
-        <img :src="'images/' + services.img + '.jpg'" :alt="'icon for ' + services.name">
+        <img :src="'images/' + services.img + '.svg'" :alt="'icon for ' + services.name">
         <h3>{{ services.name }}</h3>
     </div>
     `

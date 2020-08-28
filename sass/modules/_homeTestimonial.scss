@@ -1,0 +1,12 @@
+#homeTestimonials {
+    .testimonialSlick {
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
