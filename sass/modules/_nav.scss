@@ -1,0 +1,84 @@
+.header {
+    z-index: 99999;
+        background-color: #202020;
+        padding: 3% 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        -webkit-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: top .40s;
+    img {
+        width: 15%;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    .navTitle {
+        position: fixed;
+        left: 50%;
+        top: 6%;
+        transform: translate(-50%, 0);
+        color: white;
+        font-weight: bold;
+        -webkit-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -moz-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -ms-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -o-transition: top .40s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: top .40s;
+    }
+
+    .navBrand {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -14%;
+        align-items: center;
+        margin-right: 4%;
+
+        img {
+            margin: 0;
+            width: 18%;
+        }
+    }
+
+    nav {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        top: 0;
+        left: 0;
+        display: none;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 60%;
+            margin-top: 30%;
+            justify-content: space-between;
+
+            li {
+                a {
+                    color: white;
+                    font-size: 8vw;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    span {
+        color: white;
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        font-size: 6vw;
+    }
+}
+
+.raise {
+    top: -20% !important;
+}

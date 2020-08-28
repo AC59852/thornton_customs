@@ -1,10 +1,11 @@
-import HeroComponent from "./modules/HeroComponent.js"
+import HeroComponent from "./modules/HeroComponent.js";
+import HomeServicesComponent from "./modules/HomeServicesComponent.js";
 
 export default {
     template: `
     <div>
         <hero></hero>
-        <div><h1>Lower Content</h1></div>
+        <homeServices></homeServices>
     </div>
     `,
 
@@ -15,6 +16,7 @@ export default {
     },
 
     components: {
-        hero: HeroComponent
+        hero: HeroComponent,
+        homeServices: HomeServicesComponent
     }
 }

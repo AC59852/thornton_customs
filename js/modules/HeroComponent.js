@@ -6,14 +6,14 @@ export default {
         <div class="slick">
             <div class="slick1">
                 <div class="slickText">
-                    <h2>Test Title 3</h2>
-                    <p>This is some test paragraph text 3</p>
+                    <h2>Test Title 1</h2>
+                    <p>This is some test paragraph text 1</p>
                 </div>
             </div>
             <div class="slick2">
                 <div class="slickText">
-                    <h2>Test Title 3</h2>
-                    <p>This is some test paragraph text 3</p>
+                    <h2>Test Title 2</h2>
+                    <p>This is some test paragraph text 2</p>
                 </div>
             </div>
             <div class="slick3">
@@ -37,7 +37,9 @@ export default {
                     arrows: false,
                     dots: true,
                     autoplay: true,
-                    autoplaySpeed: 4000
+                    autoplaySpeed: 4000,
+                    fade: true,
+                    speed: 1000
                 })
             })
         }
