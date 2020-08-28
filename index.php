@@ -12,8 +12,11 @@
     <main id="app">
         <div class="container">
             <header class="header">
-                <img @click="showNav()" src="images/slick1.jpg" alt="Page Navigation Button">
-                <h2 class="navTitle">Company Title</h2>
+                <div class="topNavContent">
+                    <img @click="showNav()" src="images/slick1.jpg" alt="Page Navigation Button">
+                    <h2 class="navTitle">Company Title</h2>
+                    <img src="images/slick2.jpg" alt="Logo">
+                </div>
                 <nav>
                     <span @click="hideNav()">X</span>
                     <ul>
@@ -24,9 +27,6 @@
                         <li><router-link to="/">Contact</router-link></li>
                     </ul>
                 </nav>
-                <div class="navBrand">
-                    <img src="images/slick2.jpg" alt="Logo">
-                </div>
             </header>
         </div>
         <router-view></router-view>
