@@ -10,6 +10,12 @@ export default {
         <homeServices></homeServices>
         <homeTestimonials></homeTestimonials>
         <homeProjects></homeProjects>
+        <aside id="homeCTA">
+            <div>
+                <h4>Test CTA Title</h4>
+                <div class="homeCTABtn"><router-link to="/contact">Contact Btn</router-link></div>
+            </div>
+        </aside>
     </div>
     `,
 

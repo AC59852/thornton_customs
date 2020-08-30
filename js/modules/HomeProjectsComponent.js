@@ -6,6 +6,7 @@ export default {
     template: `
     <section class="container" id="homeProjects">
         <projectSlick v-for="homeProject in homeProject" :key="homeProject.id" :homeProject="homeProject"></projectSlick>
+        <div class="homeProjBtn"><router-link to="/">View All Work</router-link></div>
     </section>
     `,
 

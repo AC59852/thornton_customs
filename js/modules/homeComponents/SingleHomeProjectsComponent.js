@@ -2,7 +2,7 @@ export default {
     props: ['homeProject'],
 
     template: `
-    <div id="projectSlide">
+    <div class="homeProjectSlide">
         <h3>{{ homeProject.title }}</h3>
         <div class="projectSlick">
             <img :src="'images/' + homeProject.img1 + '.jpg'" :alt="'Image One For ' + homeProject.name">
@@ -19,7 +19,7 @@ export default {
     methods:  {
         projectSlickInit() {
             $(document).ready(() => {
-                $('#projectSlide .projectSlick').not('.slick-initialized').slick({
+                $('.homeProjectSlide .projectSlick').not('.slick-initialized').slick({
                     arrows: false,
                     dots: true,
                     autoplay: true,

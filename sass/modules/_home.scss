@@ -1,0 +1,140 @@
+#homeServices {
+    margin-top: 15%;
+    .homeServText {
+        h2, h3, p {
+            width: 85%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+
+        h3 {
+            background-color: #222;
+            margin-top: 2%;
+            color: white;
+        }
+
+        p:nth-child(3) {
+            margin-top: 4%;
+        }
+
+        p:nth-child(4) {
+            display: none;
+        }
+
+    }
+
+    .homeServIcons {
+        width: 85%;
+        margin: 8% auto 0;
+
+        div {
+            display: flex;
+            width: 85%;
+            margin: 5% auto;
+            padding: 4% 0;
+            background-color: #666;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            img {
+               width: 65%;
+               margin: 2% auto 0; 
+            }
+
+            h3 {
+                margin-top: 7%;
+                margin-bottom: 3%;
+                color: white;
+                background-color: #222;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+#homeTestimonials {
+    .testimonialSlick {
+        margin: 20% auto;
+        width: 90%;
+        .slick-list {
+            .slick-track {
+                padding: 5% 0;
+                .slick-slide {
+                    display: flex;
+                    flex-direction: column;
+
+                    p {
+                        margin: 2% 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+#homeProjects {
+    .homeProjectSlide {
+        text-align: center;
+
+        h3 {
+            margin-bottom: 3%;
+        }
+
+        .projectSlick {
+            width: 85%;
+            margin: 0 auto 13%;
+        }
+    }
+
+    .homeProjBtn {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #333;
+        padding: 5% 0;
+        border-radius: 2vw;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+#homeCTA {
+    margin: 20% 0 10%;
+    background-color: #777;
+    padding: 5% 0;
+
+    h4 {
+        text-align: center;
+    }
+
+    .homeCTABtn {
+        width: 50%;
+        margin: 5% auto 0;
+        text-align: center;
+        background-color: #333;
+        padding: 5% 0;
+        border-radius: 2vw;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
