@@ -64,3 +64,52 @@
         }
     }
 }
+
+@media screen and (min-width: 1366px) {
+    .header {
+        padding: 0.5% 0;
+        .topNavContent {
+            width: 90%;
+            img:nth-child(1), img:nth-child(3){
+                width: 5%;
+            }
+
+            img:nth-child(1) {
+                margin-top: 1%;
+            }
+
+            h2 {
+                margin-top: 2.2%;
+            }
+        }
+    }
+
+
+    #homeServices {
+        display: flex;
+        width: 90%;
+        margin: 10% auto 0;
+
+        .homeServText {
+            display: flex;
+            flex-direction: column;
+
+            h2, h3, p {
+                width: 70%;
+            }
+
+            p:nth-child(4) {
+                display: block;
+                margin-top: 5%;
+            }
+        }
+
+        .homeServIcons {
+            margin-top: 0;
+
+            div {
+                margin-top: 0;
+            }
+        }
+    }
+}
