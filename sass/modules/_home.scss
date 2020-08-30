@@ -64,7 +64,7 @@
 
 #homeTestimonials {
     .testimonialSlick {
-        margin: 20% auto;
+        margin: 13% auto;
         width: 90%;
         .slick-list {
             .slick-track {
@@ -85,6 +85,13 @@
 
 
 #homeProjects {
+    h2 {
+        text-align: center;
+        border-bottom: solid 1px black;
+        line-height: 7vw;
+        width: 48%;
+        margin: 0 auto 10%;
+    }
     .homeProjectSlide {
         text-align: center;
 
@@ -101,15 +108,13 @@
     .homeProjBtn {
         width: 50%;
         margin: 0 auto;
-        text-align: center;
         background-color: #333;
         padding: 5% 0;
         border-radius: 2vw;
-
-        a {
-            color: white;
-            text-decoration: none;
-        }
+        color: white;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -123,18 +128,15 @@
     h4 {
         text-align: center;
     }
-
-    .homeCTABtn {
-        width: 50%;
-        margin: 5% auto 0;
-        text-align: center;
-        background-color: #333;
-        padding: 5% 0;
-        border-radius: 2vw;
-
-        a {
+        .homeCTABtn {
+            width: 50%;
+            margin: 5% auto 0;
+            background-color: #333;
+            padding: 5% 0;
+            border-radius: 2vw;
             color: white;
             text-decoration: none;
+            display: flex;
+            justify-content: center;
         }
-    }
 }

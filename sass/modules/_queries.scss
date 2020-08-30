@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+    .header {
+        padding: 2% 0;
+        .topNavContent {
+            img:nth-child(1), img:nth-child(3){
+                width: 11%;
+            }
+        }
+    }
+
+    #homeServices {
+        .homeServText {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .homeServIcons {
+            display: flex;
+            flex-wrap: wrap;
+            width: 85%;
+
+            div {
+                width: 43%;
+                margin: 3% auto;
+            }
+        }
+
+
+    }
+
+
+    #homeProjects {
+        h2 {
+            width: 22%;
+            line-height: 4vw;
+        }
+        .homeProjectSlide {
+            .projectSlick {
+                margin: 0 auto 13%;
+                width: 70%;
+            }
+        }
+
+        .homeProjBtn {
+            width: 24%;
+            border-radius: 1vw;
+            padding: 2.5% 0;
+        }
+    }
+
+    .slick-dots {
+        margin-top: -10%;
+    }
+
+    .slick-dots li button::before {
+        font-size: 6vw;
+    }
+
+    #homeCTA {
+        padding: 3% 0;
+        .homeCTABtn {
+                width: 24%;
+                border-radius: 1vw;
+                padding: 2.5% 0;
+        }
+    }
+}

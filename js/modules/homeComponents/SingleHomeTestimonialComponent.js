@@ -3,8 +3,8 @@ export default {
 
     template: `
     <div>
-        <h3>{{ homeTestData.name }}</h3>
         <p>{{ homeTestData.para }}</p>
+        <h3>{{ homeTestData.name }}</h3>
     </div>
     `
 }
