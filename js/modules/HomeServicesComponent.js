@@ -20,10 +20,10 @@ export default {
     data: function(){
         return {
             services: [
-                {id: "1", name: "service one", img: "quality"},
-                {id: "2", name: "service two", img: "slick2"},
-                {id: "3", name: "service three", img: "slick3"},
-                {id: "4", name: "service four", img: "slick1"},
+                {id: "1", name: "service one", img: "medal"},
+                {id: "2", name: "service two", img: "medal"},
+                {id: "3", name: "service three", img: "medal"},
+                {id: "4", name: "service four", img: "medal"},
             ]
         }
     },

@@ -53,6 +53,7 @@
 
     .slick-dots li button::before {
         font-size: 6vw;
+        left: auto;
     }
 
     #homeCTA {
@@ -87,8 +88,6 @@
 
     #homeServices {
         display: flex;
-        width: 90%;
-        margin: 10% auto 0;
 
         .homeServText {
             display: flex;
@@ -109,6 +108,27 @@
 
             div {
                 margin-top: 0;
+
+                img {
+                    width: 59%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    #homeServices {
+        width: 70%;
+        margin: 10% auto 0;
+        .homeServIcons {
+            justify-content: center;
+            div {
+                margin-top: 0;
+                margin-left: 3%;
+                margin-right: 3%;
+                width: 40%;
             }
         }
     }
