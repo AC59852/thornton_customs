@@ -1,3 +1,4 @@
+@import '_vars.scss';
 @import 'modules/_nav';
 @import 'modules/_slick';
 @import 'modules/_home';
@@ -10,19 +11,25 @@ body, html {
     background-color: #f2f4f5 !important;
   }
 
+  .noScroll {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
   .test {
     animation: removeContent 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     animation-fill-mode: forwards;
   }
 
   .test2 {
-    animation: addContent 1.2s ease;
+    animation: addContent 0.8s ease;
     animation-fill-mode: forwards;
   }
 
   @keyframes removeContent {
     0% {visibility: visible;}
-    20% {opacity: 0;}
+    40% {opacity: 0;}
     99% {width: 31%; height: auto;}
     100% {visibility: hidden; width: 0; height: 0; opacity: 0;}
   }

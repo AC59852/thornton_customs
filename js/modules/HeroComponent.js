@@ -6,19 +6,19 @@ export default {
         <div class="slick">
             <div class="slick1">
                 <div class="slickText">
-                    <h2>Test Title 1</h2>
+                    <h2>Thornton Custom Creations</h2>
                     <p>This is some test paragraph text 1</p>
                 </div>
             </div>
             <div class="slick2">
                 <div class="slickText">
-                    <h2>Test Title 2</h2>
+                    <h2>Committed to Quality</h2>
                     <p>This is some test paragraph text 2</p>
                 </div>
             </div>
             <div class="slick3">
                 <div class="slickText">
-                    <h2>Test Title 3</h2>
+                    <h2>Engineering your dreams with us</h2>
                     <p>This is some test paragraph text 3</p>
                 </div>
             </div>

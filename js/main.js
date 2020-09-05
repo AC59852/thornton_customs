@@ -1,11 +1,13 @@
 import HomeComponent from './HomeComponent.js';
 import ProjectComponent from './ProjectComponent.js';
+import AboutComponent from './ProjectComponent.js';
 
 (() => {
     let router = new VueRouter({
         routes: [
             { path: '/', component: HomeComponent },
-            { path: '/projects', component: ProjectComponent}
+            { path: '/projects', component: ProjectComponent},
+            { path: '/about', component: AboutComponent},
         ]
     });
 
