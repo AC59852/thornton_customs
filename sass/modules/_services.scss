@@ -1,0 +1,96 @@
+#services {
+    .servicesHeader {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url('../images/slick1.jpg');
+        height: 40vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10%;
+
+        h2 {
+            color: white;
+            font-family: $headings;
+            font-size: 9vw;
+            font-weight: 600;
+        }
+    }
+
+    .servicesCon {
+        .banner:hover.serviceItem {
+            height: 75vh;
+        }
+        .serviceItem {
+            width: 85%;
+            margin: 0 auto 10%;
+            background-color: rgba(231, 231, 231, 0.322);
+            border-radius: 5vw;
+            padding-bottom: 4%;
+            box-shadow: 0px 0.5rem 1.5rem rgba(0,0,0,0.3);
+            height: 70vh;
+            transition: height 0.4s ease;
+            overflow: hidden;
+            
+            .banner {
+                border-radius: 5vw 5vw 0vw 0vw;
+                padding: 4% 0 4%;
+                margin-bottom: 25%;
+                height: 20vh;
+                background-size: cover !important;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                transition: height 0.4s ease;
+                background-position: center !important;
+
+                &:hover {
+                    height: 100%;
+
+                    img {
+                        opacity: 0;
+                    }
+                }
+
+                img {
+                    width: 33%;
+                    display: flex;
+                    border-radius: 160vw;
+                    background-color: rgb(231, 231, 231);
+                    padding: 4%;
+                    transform: translateY(50%);
+                    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+                    transition: all 0.4s ease;
+
+                    &:hover {
+                        width: 36%;
+                    }
+                }
+            }
+            h3 {
+                text-align: center;
+                font-family: $headings;
+                font-weight: 500;
+                font-size: 6vw;
+                position: relative;
+
+                &::after {
+                    content: '';
+                        width: 15%;
+                        height: 2px;
+                        background-color: black;
+                        position: absolute;
+                        top: 150%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                }
+            }
+
+            p {
+                margin: 9% 0 6%;
+                padding: 0 10%;
+                line-height: 6vw;
+                font-family: $paragraphs;
+            }
+        }
+    }
+}

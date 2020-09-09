@@ -23,8 +23,10 @@ export default {
                 </div>
             </div>
         </div>
-        <div @click="hideItems1()"><span>Click Me</span></div>
-        <div @click="hideItems2()"><span>Click Me 2</span></div>
+        <div class="filterBtns">
+            <div @click="hideItems1()"><span>Click Me</span></div>
+            <div @click="hideItems2()"><span>Click Me 2</span></div>
+        </div>
         <div class="projectsCon">
             <project v-for="project in projects" :project="project" :key="project.id" v-on:click.native="newWork(project); showContent()"></project>
         </div>

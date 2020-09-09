@@ -9,7 +9,7 @@ export default {
         <div class="homeProjCycleCon">
         <projectSlick v-for="homeProject in homeProject" :key="homeProject.id" :homeProject="homeProject"></projectSlick>
         </div>
-        <router-link to="/" class="homeProjBtn">View All Work</router-link>
+        <router-link to="/projects" class="homeProjBtn">View All Work</router-link>
     </section>
     `,
 

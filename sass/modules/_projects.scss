@@ -1,4 +1,8 @@
 #projects {
+    .filterBtns {
+      margin-top: 20%;
+    }
+
     .projectsCon {
         display: flex;
             width: 85%;
@@ -9,7 +13,7 @@
             width: 100%;
             margin: 4% 0;
             overflow: hidden;
-            display: inline-block;
+            display: block;
             text-align: center;
             position: relative;
             cursor: pointer;

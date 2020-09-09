@@ -1,13 +1,19 @@
 import HomeComponent from './HomeComponent.js';
 import ProjectComponent from './ProjectComponent.js';
-import AboutComponent from './ProjectComponent.js';
+import AboutComponent from './AboutComponent.js';
+import ServicesComponent from './ServicesComponent.js';
+import ContactComponent from './ContactComponent.js';
+import EmailSentComponent from './modules/contactComponents/EmailSentComponent.js'
 
 (() => {
     let router = new VueRouter({
         routes: [
-            { path: '/', component: HomeComponent },
-            { path: '/projects', component: ProjectComponent},
-            { path: '/about', component: AboutComponent},
+            { path: '/', name: "home", component: HomeComponent },
+            { path: '/projects', name: "work", component: ProjectComponent},
+            { path: '/about', name: "about", component: AboutComponent},
+            { path: '/services', name: "services", component: ServicesComponent},
+            { path: '/contact', name: "contact", component: ContactComponent},
+            { path: '/sent', name: "sent", component: EmailSentComponent}
         ]
     });
 
