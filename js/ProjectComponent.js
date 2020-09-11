@@ -24,8 +24,10 @@ export default {
             </div>
         </div>
         <div class="filterBtns">
-            <div @click="hideItems1()"><span>Click Me</span></div>
-            <div @click="hideItems2()"><span>Click Me 2</span></div>
+            <div @click="hideItems1()"><span>Residential</span></div>
+            <div @click="hideItems2()"><span>Commercial</span></div>
+            <div @click="hideItems3()"><span>Flooring</span></div>
+            <div @click="hideItems4()"><span>Backyard</span></div>
         </div>
         <div class="projectsCon">
             <project v-for="project in projects" :project="project" :key="project.id" v-on:click.native="newWork(project); showContent()"></project>
@@ -61,6 +63,15 @@ export default {
     methods: {
         hideItems1() {
 
+            $('.residential').removeClass("test");
+            $('.residential').addClass("test2");
+
+            $('.project').not('.residential').removeClass("test2");
+            $('.project').not('.residential').addClass("test");
+        },
+
+        hideItems2() {
+
             $('.commercial').removeClass("test");
             $('.commercial').addClass("test2");
 
@@ -68,13 +79,22 @@ export default {
             $('.project').not('.commercial').addClass("test");
         },
 
-        hideItems2() {
+        hideItems3() {
 
-            $('.residential').removeClass("test");
-            $('.residential').addClass("test2");
+            $('.flooring').removeClass("test");
+            $('.flooring').addClass("test2");
 
-            $('.project').not('.residential').removeClass("test2");
-            $('.project').not('.residential').addClass("test");
+            $('.project').not('.flooring').removeClass("test2");
+            $('.project').not('.flooring').addClass("test");
+        },
+
+        hideItems4() {
+
+            $('.backyard').removeClass("test");
+            $('.backyard').addClass("test2");
+
+            $('.project').not('.backyard').removeClass("test2");
+            $('.project').not('.backyard').addClass("test");
         },
 
         fetchWork() {

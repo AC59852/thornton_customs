@@ -25,14 +25,27 @@
 
         h2 {
             text-align: center;
-            background-color: #222;
-            color: white;
+            color: black;
+            position: relative;
+
+                &:after {
+                    content: '';
+                    width: 15%;
+                    height: 2px;
+                    background-color: black;
+                    position: absolute;
+                    top: 140%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: width 0.2s ease;
+                }
         }
 
         h3 {
-            background-color: #222;
-            margin-top: 2%;
-            color: white;
+            display: none;
+            margin-top: 3%;
+            color: black;
+            font-size: 4.6vw;
         }
 
         h2, h3 {
@@ -41,10 +54,11 @@
 
         p {
             font-family: $paragraphs;
+            font-size: 4.5vw;
         }
 
         p:nth-child(3) {
-            margin-top: 4%;
+            margin-top: 10%;
         }
 
         p:nth-child(4) {
@@ -176,11 +190,9 @@
     .homeProjectSlide {
         text-align: center;
 
-        .slick-track {
-            .slick-slide {
+        .slick-list {
                 border-radius: 5vw;
             }
-        }
 
         h3 {
             margin-bottom: 3%;
@@ -197,7 +209,7 @@
         width: 50%;
         margin: 0 auto;
         border: 2px black solid;
-        padding: 5.5% 0 5%;
+        padding: 5% 0 5%;
         border-radius: 150vw;
         color: black;
         text-decoration: none;
@@ -215,34 +227,39 @@
     }
 }
 
-
-
 #homeCTA {
     margin: 20% 0 10%;
-    background-color: #777;
-    padding: 5% 0;
+    padding: 9% 0;
+    text-align: center;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/slick3.jpg');
+    background-size: cover;
 
     h4 {
-        text-align: center;
-    }
-        .homeCTABtn {
-            width: 50%;
-        margin: 0 auto;
-        border: 2px black solid;
-        padding: 5.5% 0 5%;
-        border-radius: 150vw;
-        color: black;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        font-family: $paragraphs;
+        margin: 0 0 5%;
+        font-family: $headings;
+        color: white;
         font-weight: 600;
-        transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
-        
-        &:hover {
-            background-color: black;
-            border: white solid 2px;
+    }
+
+    .homeCTABtn {
+            width: 45%;
+            margin: 0 auto;
+            border: 2px white solid;
+            padding: 5% 0 5%;
+            font-size: 5vw;
+            border-radius: 150vw;
             color: white;
-        }
-        }
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            font-family: $paragraphs;
+            font-weight: 600;
+            transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+            
+            &:hover {
+                background-color: white;
+                border: transparent solid 2px;
+                color: black;
+            }
+    }
 }

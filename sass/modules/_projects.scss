@@ -1,6 +1,30 @@
 #projects {
     .filterBtns {
       margin-top: 20%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      div {
+        width: 30%;
+        padding: 4% 3%;
+        border-radius: 8vw;
+        border: solid 2px black;
+        color: black;
+        text-align: center;
+        margin: 2% 0;
+        font-family: $headings;
+        font-size: 4vw;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+          background-color: black;
+          color: white;
+          border: solid 2px white;
+        }
+      }
     }
 
     .projectsCon {
@@ -17,6 +41,17 @@
             text-align: center;
             position: relative;
             cursor: pointer;
+            border-radius: 5vw;
+
+            &:hover {
+              div {
+                transform: scale(1.5);
+              filter: brightness(0.4);
+              }
+              h3 {
+                font-size: 10vw;
+              }
+          }
 
             h3 {
                 position: absolute;
@@ -26,11 +61,14 @@
                 width: 90%;
                 color: white;
                 font-size: 8vw;
+                font-weight: 500;
                 font-family: $headings;
+                transition: font-size 0.25s ease;
             }
             div {
                 overflow: hidden;
                 filter: brightness(0.55);
+                transition: transform 0.25s ease, filter 0.25s ease;
                 img {
                     width: 100%;
                     display: flex;
@@ -63,18 +101,42 @@
                 margin: 0 auto;
                 padding: 1rem 1rem;
                 border-bottom: 1px solid #dee2e6;
+
+                h2 {
+                  font-family: $headings;
+                  text-transform: capitalize;
+                  font-size: 6vw;
+                }
             }
 
             .lbMain {
                 margin-top: 8%;
 
+                h2, h3 {
+                  font-family: $headings;
+                }
+
                 h2 {
                     text-align: center;
+                    font-size: 6.4vw;
+                    position: relative;
+
+                    &:after {
+                      content: '';
+                      width: 10%;
+                      height: 2px;
+                      background-color: black;
+                      position: absolute;
+                      top: 150%;
+                      left: 50%;
+                      transform: translate(-50%, -50%);
+                  }
                 }
 
                 h3 {
-                    margin: 6% 0;
+                    margin: 10% 0 6%;
                     text-align: center;
+                    font-weight: 300;
                 }
 
                 .lbSlick {
@@ -89,6 +151,8 @@
                 p {
                     width: 85%;
                     margin: 9% auto 0;
+                    font-family: $paragraphs;
+                    line-height: 5.8vw;
                 }
 
                 p:nth-child(5) {

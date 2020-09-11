@@ -4,7 +4,7 @@ export default {
     template: `
     <div class="project" :class="project.class">
         <div>
-            <img :src="'images/' + project.previewImg + '.jpg'" :alt="'image for ' + project.name" height="300" width="300">
+            <img :src="'images/' + project.previewImg + '.jpg'" :alt="'image for ' + project.name" height="250">
         </div>
         <h3>{{ project.name }}</h3>
     </div>
