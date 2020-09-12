@@ -18,7 +18,7 @@ export default {
             </div>
             <div class="slick3">
                 <div class="slickText">
-                    <h2>Engineering your dreams with us</h2>
+                    <h2>Your New Home Starts Here</h2>
                     <p>This is some test paragraph text 3</p>
                 </div>
             </div>

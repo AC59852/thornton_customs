@@ -4,6 +4,7 @@
 @import 'modules/_about';
 @import 'modules/_projects';
 @import 'modules/_services';
+@import 'modules/_contact.scss';
 @import 'modules/_slick';
 @import 'modules/_queries';
 
@@ -42,4 +43,9 @@ body, html {
     20% {opacity: 0;}
     79% {position: absolute; top: -50%;}
     80% {width: 31%; height: auto; opacity: 0; position: relative; top: 0;}
+  }
+
+
+  .navReveal {
+    height: 100% !important;
   }

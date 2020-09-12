@@ -3,7 +3,7 @@ import ProjectComponent from './ProjectComponent.js';
 import AboutComponent from './AboutComponent.js';
 import ServicesComponent from './ServicesComponent.js';
 import ContactComponent from './ContactComponent.js';
-import EmailSentComponent from './modules/contactComponents/EmailSentComponent.js'
+import EmailSentComponent from './modules/contactComponents/EmailSentComponent.js';
 
 (() => {
     let router = new VueRouter({
@@ -87,11 +87,13 @@ import EmailSentComponent from './modules/contactComponents/EmailSentComponent.j
 
         methods: {
             showNav() {
-                $(".header nav").show();
+                $(".header nav").toggleClass("navReveal");
+                $("body").toggleClass("noScroll");
             },
 
             hideNav() {
-                $(".header nav").hide();
+                $("body").toggleClass("noScroll");
+                $(".header nav").toggleClass("navReveal");
             }
         },
 

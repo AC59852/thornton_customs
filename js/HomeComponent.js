@@ -16,13 +16,18 @@ export default {
                 <router-link to="/contact" class="homeCTABtn">Contact Btn</router-link>
             </div>
         </aside>
+        <div id="adsgoeshere" v-html="adsenseContent"></div>
     </div>
     `,
 
     data: function() {
         return {
-
+            adsenseContent: ''
         }
+    },
+
+    mounted: function() {
+        this.adsenseContent = document.getElementById('divadsensedisplaynone').innerHTML
     },
 
     components: {

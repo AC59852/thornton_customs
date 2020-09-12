@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<?php header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script data-ad-client="ca-pub-2397089338828705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,24 +18,37 @@
         <div class="container">
             <header class="header">
                 <div class="topNavContent">
-                    <img @click="showNav()" src="images/slick1.jpg" alt="Page Navigation Button">
-                    <h2 class="navTitle">Company Title</h2>
+                    <img @click="showNav()" src="images/menu.svg" alt="Page Navigation Button">
+                    <h2 class="navTitle">Thornton's Customs</h2>
                     <img src="images/slick2.jpg" alt="Logo">
                 </div>
                 <nav>
                     <span @click="hideNav()">X</span>
                     <ul>
-                        <li><router-link to="/">Home</router-link></li>
-                        <li><router-link to="/about">About</router-link></li>
-                        <li><router-link to="/projects">Work</router-link></li>
-                        <li><router-link to="/">Services</router-link></li>
-                        <li><router-link to="/">Contact</router-link></li>
+                        <li @click="hideNav()"><router-link to="/">Home</router-link></li>
+                        <li @click="hideNav()"><router-link to="/about">About</router-link></li>
+                        <li @click="hideNav()"><router-link to="/projects">Work</router-link></li>
+                        <li @click="hideNav()"><router-link to="/services">Services</router-link></li>
+                        <li @click="hideNav()"><router-link to="/contact">Contact</router-link></li>
                     </ul>
                 </nav>
             </header>
         </div>
         <router-view></router-view>
     </main>
+    <div id="divadsensedisplaynone" style="display:none;">
+    <!-- put here all adsense code -->
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-2397089338828705"
+        data-ad-slot="4282714615"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/vue"></script>

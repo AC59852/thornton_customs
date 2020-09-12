@@ -1,0 +1,158 @@
+#contact {
+    .contactHeader {
+            background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2) ), url('../images/slick3.jpg');
+            height: 40vh;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            h2 {
+                color: white;
+                font-family: $headings;
+                font-size: 9vw;
+                font-weight: 600;
+            }
+        }
+
+        .contactInfo {
+            background-color: $main-color;
+            padding: 8% 0;
+            margin-bottom: 5%;
+            div {
+                width: 80%;
+                margin: 0 auto;
+                a {
+                    text-decoration: none;
+                    h3 {
+                        color: white;
+                        font-size: 5vw;
+                        font-family: $headings;
+                    }
+                }
+
+                #contEmail {
+                    display: flex;
+                    align-items: center;
+                    margin: 5% 0 10%;
+                    &::before {
+                        content: url(../images/email.svg);
+                        width: 20%;
+                        display: flex;
+                        padding-right: 2%;
+                    }
+                }
+
+                #contPhone {
+                    display: flex;
+                    align-items: center;
+                    margin: 0 0 5%;
+                    &::before {
+                        content: url(../images/phone.svg);
+                        width: 12%;
+                        display: flex;
+                        padding-right: 8%;
+                        margin-left: 2%;
+                    }
+                }
+            }
+        }
+
+        .contactCon {
+            margin-bottom: 15%;
+            .formWrapper {
+                form {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .contactInput {
+                        width: 65%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0 auto;
+                        label {
+                            position: absolute;
+                            opacity: 0;
+                        }
+
+                        &:focus-within {
+                            div {
+                                width: 100%;
+                            }
+                        }
+
+                        input {
+                            border: none;
+                            position: relative;
+                            margin: 10% 0 0;
+                            text-align: center;
+                            font-family: $headings;
+                            font-size: 5vw;
+
+                            &:focus {
+                                outline: none !important;
+                            }
+
+                            &::placeholder {
+                                text-align: center;
+                                color: black;
+                                opacity: 1;
+                            }
+                        }
+
+                        div {
+                            margin: 1% auto 0;
+                            width: 45%;
+                            height: 2px;
+                            background-color: black;
+                            transition: width 0.2s ease;
+                        }
+
+                        textarea {
+                            margin-top: 10%;
+                            height: 20vh;
+                            padding: 2% 3%;
+                            font-family: $paragraphs;
+                            font-size: 4.4vw;
+                            border: none;
+                            border: solid 2px black;
+                            transition: border-radius 0.2s ease;
+                            
+                            &:focus {
+                                border-radius: 3vw;
+                                outline: none !important;
+                            }
+
+                            &::placeholder {
+                                opacity: 1;
+                                color: black;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 40%;
+                        margin: 5% auto 0;
+                        border: 2px black solid;
+                        padding: 3.5% 0 3.5%;
+                        border-radius: 150vw;
+                        color: black;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        font-family: $paragraphs;
+                        font-weight: 500;
+                        font-size: 4.8vw;
+                        transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
+                        
+                        &:hover {
+                            background-color: black;
+                            border: white solid 2px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+}
