@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<?php header('Set-Cookie: cross-site-cookie=bar; SameSite=None; Secure');?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script data-ad-client="ca-pub-2397089338828705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -36,9 +34,7 @@
         </div>
         <router-view></router-view>
     </main>
-    <div id="divadsensedisplaynone" style="display:none;">
-    <!-- put here all adsense code -->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-2397089338828705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-2397089338828705"
