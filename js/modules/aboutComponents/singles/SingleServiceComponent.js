@@ -4,7 +4,6 @@ export default {
     template: `
     <div>
         <img :src="'images/' + service.icon + '.svg'">
-        <span>{{ service.name }}</span>
     </div>
     `
 }
