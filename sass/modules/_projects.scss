@@ -94,6 +94,11 @@
             border-radius: 1vw;
             overflow: auto;
             max-height: calc(100vh - 1rem);
+            scrollbar-width: none;
+
+            &::-webkit-scrollbar {
+              display: none;
+            }
 
             .lbTop {
                 display: flex;
@@ -140,7 +145,7 @@
                 }
 
                 .lbSlick {
-                    width: 85%;
+                    width: 90%;
                     margin: 0 auto;
 
                     .slick-list {
@@ -152,7 +157,8 @@
                     width: 85%;
                     margin: 9% auto 0;
                     font-family: $paragraphs;
-                    line-height: 5.8vw;
+                    line-height: 5.5vw;
+                    font-size: 4.6vw;
                 }
 
                 p:nth-child(5) {

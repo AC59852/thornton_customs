@@ -536,6 +536,10 @@
   border-radius: 1vw;
   overflow: auto;
   max-height: calc(100vh - 1rem);
+  scrollbar-width: none;
+}
+#projects .lbCon .projLb::-webkit-scrollbar {
+  display: none;
 }
 #projects .lbCon .projLb .lbTop {
   display: flex;
@@ -576,7 +580,7 @@
   font-weight: 300;
 }
 #projects .lbCon .projLb .lbMain .lbSlick {
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 #projects .lbCon .projLb .lbMain .lbSlick .slick-list {
@@ -586,7 +590,8 @@
   width: 85%;
   margin: 9% auto 0;
   font-family: "Quicksand", sans-serif;
-  line-height: 5.8vw;
+  line-height: 5.5vw;
+  font-size: 4.6vw;
 }
 #projects .lbCon .projLb .lbMain p:nth-child(5) {
   margin-bottom: 13%;
@@ -695,6 +700,34 @@
   font-size: 9vw;
   font-weight: 600;
 }
+#services .servicesCon .serviceInfo {
+  width: 85%;
+  margin: 0 auto;
+}
+#services .servicesCon .serviceInfo h3 {
+  text-align: center;
+  font-family: "Spartan", sans-serif;
+  position: relative;
+  font-size: 5.5vw;
+  font-weight: 500;
+}
+#services .servicesCon .serviceInfo h3::after {
+  content: "";
+  width: 15%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 150%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#services .servicesCon .serviceInfo p {
+  font-family: "Quicksand", sans-serif;
+  margin-top: 10%;
+  font-size: 4.6vw;
+  margin-bottom: 15%;
+  text-align: center;
+}
 #services .servicesCon .banner:hover.serviceItem {
   height: 75vh;
 }
@@ -705,14 +738,14 @@
   border-radius: 5vw;
   padding-bottom: 4%;
   box-shadow: 0px 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-  height: 70vh;
+  height: 67vh;
   transition: height 0.4s ease;
   overflow: hidden;
 }
 #services .servicesCon .serviceItem .banner {
   border-radius: 5vw 5vw 0vw 0vw;
   padding: 4% 0 4%;
-  margin-bottom: 25%;
+  margin-bottom: 22%;
   height: 20vh;
   background-size: cover !important;
   display: flex;
@@ -728,11 +761,11 @@
   opacity: 0;
 }
 #services .servicesCon .serviceItem .banner img {
-  width: 33%;
+  width: 29%;
   display: flex;
   border-radius: 160vw;
   background-color: #e7e7e7;
-  padding: 4%;
+  padding: 3.4%;
   transform: translateY(50%);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   transition: all 0.4s ease;
@@ -762,6 +795,7 @@
   padding: 0 10%;
   line-height: 6vw;
   font-family: "Quicksand", sans-serif;
+  font-size: 4.5vw;
 }
 
 .slick-track {
