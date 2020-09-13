@@ -1,3 +1,7 @@
+<?php
+    header('Set-Cookie: cross-site-cookie=name; SameSite=None; Secure');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +13,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/main.css">
+    <script data-ad-client="ca-pub-2397089338828705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <title>Thornton's Custom Creations</title>
 </head>
 <body>
