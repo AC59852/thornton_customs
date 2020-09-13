@@ -39,7 +39,6 @@
         </div>
         <router-view></router-view>
     </main>
-    <script data-ad-client="ca-pub-2397089338828705" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-2397089338828705"
