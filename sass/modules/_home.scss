@@ -82,6 +82,7 @@
             justify-content: center;
             text-align: center;
             box-shadow: 0px 0.3rem 1.3rem rgba(0,0,0,0.3);
+            transition: box-shadow 0.2s ease;
 
             img {
                width: 60%;
@@ -89,9 +90,15 @@
             }
 
             &:hover {
+                h3 {
+                    color: $main-color;
+                }
                 h3:after {
                     width: 35%;
+                    background-color: $main-color;
                 }
+
+                box-shadow: 0px 0.3rem 1.3rem rgba($color: #1d5a97, $alpha: 0.7);
             }
 
             h3 {
@@ -100,6 +107,7 @@
                 color: black;
                 font-family: $headings;
                 position: relative;
+                transition: color 0.2s ease;
 
                 &:after {
                     content: '';
@@ -110,7 +118,7 @@
                     top: 170%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    transition: width 0.2s ease;
+                    transition: width 0.2s ease, background-color 0.2s ease;
                 }
             }
         }

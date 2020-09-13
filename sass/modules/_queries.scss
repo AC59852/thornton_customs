@@ -2,9 +2,44 @@
     .header {
         padding: 2% 0;
         .topNavContent {
+            justify-content: space-between;
+            width: 90%;
             img:nth-child(1), img:nth-child(3){
-                width: 11%;
+                width: 9%;
             }
+
+            img:nth-child(1) {
+                width: 6% !important;
+                margin-top: 3%;
+            }
+
+            h2 {
+                margin-top: 3%;
+                font-size: 4vw;
+            }
+        }
+
+        nav {
+            ul {
+                li {
+                    margin: 16% 0;
+                    a {
+                        font-size: 6vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #slideshow {
+        h2 {
+            font-size: 7vw;
+            line-height: 8.6vw;
+        }
+
+        p {
+            font-size: 4vw;
+
         }
     }
 
@@ -12,38 +47,108 @@
         .homeServText {
             width: 80%;
             margin: 0 auto;
+
+            h2 {
+                font-size: 3.8vw;
+                font-weight: 500;
+
+                &::after {
+                    height: 3px;
+                }
+            }
+
+            p {
+                font-size: 2.4vw;
+                line-height: 3vw;
+            }
         }
         .homeServIcons {
             display: flex;
             flex-wrap: wrap;
-            width: 85%;
+            width: auto;
+            padding: 0 17%;
+            margin-top: 5%;
 
             div {
-                width: 43%;
-                margin: 3% auto;
+                width: 44%;
+                margin: 2.5% auto;
+                border-radius: 4vw;
+                padding: 5% 0 7%;
+                background-color: transparent !important;
+
+                img {
+                    width: 50%;
+                }
+
+                h3 {
+                    font-size: 2.3vw;
+                    margin-top: 12%;
+                }
             }
         }
+    }
 
+    #homeTestimonials {
+        .testimonialSlick {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        p {
+                            margin: 2% 0 4%;
+                            font-size: 3vw;
+                            width: 73%;
+                            line-height: 3.6vw;
+                        }
 
+                        h3 {
+                            font-size: 2.6vw;
+                            margin-bottom: 2%;
+
+                            &::after {
+                                top: 155%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
     #homeProjects {
+        margin-top: 15%;
         h2 {
-            width: 22%;
-            line-height: 4vw;
+            width: 100%;
+            font-size: 3.8vw;
+
+            &::after {
+                height: 3px;
+            }
         }
         .homeProjectSlide {
+            h3 {
+                font-size: 2.3vw;
+            }
+
             .projectSlick {
                 margin: 0 auto 13%;
-                width: 70%;
+                width: 60%;
+            }
+
+            .slick-list {
+                border-radius: 3vw;
+            }
+
+            .slick-dots li button::before {
+                font-size: 4vw;
             }
         }
 
         .homeProjBtn {
-            width: 24%;
+            width: 22%;
             border-radius: 1vw;
             padding: 2.5% 0;
+            font-size: 2.3vw;
         }
     }
 
@@ -57,30 +162,60 @@
     }
 
     #homeCTA {
-        padding: 3% 0;
+        padding: 6% 0;
+
+        h4 {
+            margin-bottom: 3%;
+            font-size: 2.8vw;
+        }
         .homeCTABtn {
-                width: 24%;
-                border-radius: 1vw;
-                padding: 2.5% 0;
+            width: 22%;
+            border-radius: 1vw;
+            padding: 2.1% 0 2.5%;
+            font-size: 2.3vw;
         }
     }
 }
 
 @media screen and (min-width: 1366px) {
     .header {
-        padding: 0.5% 0;
+        padding: 1% 0;
         .topNavContent {
-            width: 90%;
+            width: 80%;
             img:nth-child(1), img:nth-child(3){
-                width: 5%;
+                width: 4.5%;
             }
 
             img:nth-child(1) {
                 margin-top: 1%;
+                width: 3% !important;
             }
 
             h2 {
-                margin-top: 2.2%;
+                margin-top: 1%;
+                font-size: 2.3vw;
+            }
+        }
+
+        span {
+            font-size: 3vw;
+            top: 3%;
+            right: 3%;
+        }
+
+        nav {
+            ul {
+                li {
+                    margin: 10% 0;
+
+                    a {
+                        font-size: 3.4vw;
+
+                        &:hover {
+                            border-width: 4px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -168,16 +303,47 @@
         .homeServIcons {
             justify-content: center;
             width: 65%;
+            padding: 0;
             div {
                 margin-top: 0;
                 margin-left: 3%;
                 margin-right: 3%;
-                width: 40%;
+                width: 38%;
+                padding: 5% 0 7%;
+                margin-bottom: 5%;
+                border-radius: 2vw;
+
+                img {
+                    width: 42%;
+                }
+
+                h3 {
+                    font-size: 1.2vw;
+
+                    &::after {
+                        height: 3px;
+                        top: 155%;
+                    }
+                }
             }
         }
 
         .homeServText {
             width: 65%;
+            h2 {
+                font-size: 2.4vw;
+                margin-bottom: 3%;
+
+                &::after {
+                    height: 3px;
+                    top: 140%;
+                }
+            }
+
+            p {
+                font-size: 1.1vw;
+                line-height: 1.5vw;
+            }
         }
     }
 
