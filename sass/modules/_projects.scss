@@ -151,6 +151,15 @@
 
                     .slick-list {
                         border-radius: 2vw;
+
+                        .slick-track {
+                          height: 35vh;
+
+                          img {
+                            align-self: stretch;
+                            height: auto;
+                          }
+                        }
                     }
                 }
 
