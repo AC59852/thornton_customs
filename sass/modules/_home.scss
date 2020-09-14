@@ -200,6 +200,11 @@
 
         .slick-list {
                 border-radius: 5vw;
+
+                img {
+                    height: 35vh;
+                    align-self: flex-start;
+                }
             }
 
         h3 {
