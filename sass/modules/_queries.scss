@@ -476,12 +476,12 @@
         .topNavContent {
             width: 80%;
             img:nth-child(1), img:nth-child(3){
-                width: 4.5%;
+                width: 6%;
             }
 
             img:nth-child(1) {
-                margin-top: 1%;
-                width: 3% !important;
+                margin-top: 0.5%;
+                width: 4% !important;
             }
 
             h2 {
@@ -513,16 +513,41 @@
         }
     }
 
+    #slideshow {
+        h2 {
+            font-size: 5.6vw;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 5.6vw;
+        }
+
+        p {
+            font-size: 2vw;
+        }
+    }
+
 
     #homeServices {
         display: flex;
+        margin-top: 10%;
 
         .homeServText {
             display: flex;
             flex-direction: column;
+            width: 50%;
+            margin: 0;
 
             h2, h3, p {
                 width: 70%;
+            }
+
+            h2 {
+                font-size: 2.6vw;
+            }
+
+            p {
+                font-size: 1.2vw;
+                line-height: 1.8vw;
             }
 
             p:nth-child(4) {
@@ -533,16 +558,91 @@
 
         .homeServIcons {
             margin-top: 0;
+            padding: 0;
+            width: 43%;
 
             div {
                 margin-top: 0;
+                width: 40%;
+                margin: 2.5% auto;
+                border-radius: 3vw;
+                padding: 6% 2% 8%;
 
                 img {
-                    width: 59%;
+                    width: 45%;
                     margin: 0 auto;
+                }
+
+                h3 {
+                    font-size: 1.3vw;
                 }
             }
         }
+    }
+
+    #homeTestimonials {
+        .testimonialSlick {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        p {
+                            margin: 0 0 3%;
+                            font-size: 2vw;
+                            line-height: 2.4vw;
+                            width: 54%;
+                        }
+
+                        h3 {
+                            font-size: 2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #homeProjects {
+        h2 {
+            font-size: 2.6vw;
+            margin-bottom: 8%;
+        }
+        .homeProjCycleCon {
+            display: flex;
+            justify-content: center;
+            width: 75%;
+            margin: 0 auto;
+
+            .homeProjectSlide {
+                width: 44%;
+                margin: 0 auto;
+
+                .projectSlick {
+                    width: 91%;
+                }
+
+                h3 {
+                    margin-bottom: 4%;
+                    font-size: 1.8vw;
+                }
+
+                .slick-dots {
+                    li {
+                        button {
+                            &::before {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+
+                .slick-list {
+                    border-radius: 2vw;
+                    img {
+                        height: 56vh;
+                    }
+                }
+            }
+    }
     }
 
     #services {
@@ -587,6 +687,251 @@
             }
         }
     }
+
+    #about {
+        .aboutHeader {
+            h2 {
+                font-size: 5vw;
+            }
+        }
+        .aboutCon {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            padding: 0 5%;
+            #aboutInfo {
+                width: 40%;
+                margin: 0;
+
+                .aboutInfoCon {
+                    display: flex;
+                    flex-direction: column;
+
+                    .aboutInfoContent {
+                        h3 {
+                            font-size: 2vw;
+                        }
+
+                        h4 {
+                            display: none;
+                        }
+
+                        p {
+                            font-size: 1.2vw;
+                            line-height: 1.4vw;
+                            width: 100%;
+                            margin-top: 4%;
+                        }
+                    }
+
+                    img {
+                        border-radius: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            #aboutCta {
+                width: 40%;
+                margin: 0;
+                .aboutCtaCon {
+                    display: flex;
+                    flex-direction: column;
+                    .aboutCtaContent {
+                        h3 {
+                            font-size: 2vw;
+                        }
+
+                        p {
+                            font-size: 1.2vw;
+                            line-height: 1.4vw;
+                        }
+                    }
+                    img {
+                        border-radius: 0;
+                        width: 100%;
+                    }
+                }
+            }
+
+            #aboutServices {
+                order: -1;
+                margin-top: 0;
+                width: 100%;
+                padding: 0;
+                margin-top: 0;
+                margin-bottom: 10%;
+                .aboutServicesCon {
+                    width: 100%;
+                    padding: 8% 0;
+                    display: flex;
+                    justify-content: center;
+                    .aboutServiceContent {
+                        width: 50%;
+                        height: auto;
+                        overflow: auto;
+                        h4 {
+                            font-size: 2.6vw;
+                            padding-top: 0;
+                            margin-bottom: 0;
+                            &::after {
+                                width: 8%;
+                                top: 120%;
+                            }
+                        }
+
+                        p {
+                            font-size: 1.3vw;
+                            line-height: 1.5vw;
+                            width: 80%;
+                            margin-top: 6%;
+                        }
+                    }
+
+                    .aboutServiceBtns {
+                        padding: 0;
+                        width: 30%;
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-dots li button::before {
+        font-size: 3vw;
+        left: auto;
+    }
+
+    #projects {
+        .projectHeader {
+            h2 {
+                font-size: 5vw;
+            }
+        }
+
+        .lbCon {
+            .projLb {
+                margin: 2rem 6rem;
+                border-radius: 0.5vw;
+                max-height: calc(100vh - 4rem);
+
+                .lbTop {
+                    padding: 1rem 3rem;
+                    border-width: 2px;
+
+                    h2 {
+                        font-size: 2vw;
+                    }
+
+                    span {
+                        font-size: 1.8vw;
+                    }
+                }
+
+                .lbMain {
+                    margin-top: 4%;
+                    h2 {
+                        margin-bottom: 5%;
+                        font-size: 2.6vw;
+                        &::after {
+                            width: 7%;
+                        }
+                    }
+
+                    h3 {
+                        display: none;
+                    }
+
+                    .lbSlick {
+                        width: 60%;
+
+                        .slick-list {
+                            .slick-track {
+                                height: 60vh;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1.3vw;
+                        line-height: 1.6vw;
+                        width: 60%;
+                        margin-top: 9%;
+                    }
+
+                    p:nth-child(5) {
+                        margin-top: 2%;
+                        margin-bottom: 4%;
+                    }
+                }
+            }
+        }
+
+        .filterBtns {
+            width: 60%;
+            margin: 0 auto;
+            padding: 0;
+
+            div {
+                font-size: 1.1vw;
+                padding: 2.3% 0.2% 2%;
+                margin: 0 2% 2%;
+            }
+        }
+        .projectsCon {
+            display: flex;
+                flex-wrap: wrap;
+                width: 70%;
+                margin: 2% auto 0;
+                justify-content: center;
+                flex-direction: row;
+            .project {
+                width: 30%;
+                overflow: hidden;
+                margin: 0 auto 3%;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+                cursor: pointer;
+                border-radius: 2vw;
+
+                &:hover {
+                    h3 {
+                        font-size: 2.2vw;
+                    }
+                }
+    
+                h3 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    transition: font-size 0.2s ease;
+                    color: white;
+                    font-size: 1.8vw;
+                }
+                div {
+                    overflow: hidden;
+                    transition: all 0.2s ease;
+                    filter: brightness(0.6);
+                    &:hover {
+                        transform: scale(1.5);
+                        filter: brightness(0.5);
+                    }
+                    img {
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 10%;
+                        overflow: hidden;
+                        margin: 0 auto;
+                        height: 37vh;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1680px) {
@@ -640,56 +985,4 @@
         }
     }
 
-
-
-    #projects {
-        .projectsCon {
-            display: flex;
-                flex-wrap: wrap;
-                width: 60%;
-                margin: 10% auto 0;
-                justify-content: center;
-                flex-direction: row;
-            .project {
-                width: 31%;
-                overflow: hidden;
-                margin: 0 1% 2% 0;
-                display: inline-block;
-                text-align: center;
-                position: relative;
-                cursor: pointer;
-    
-                h3 {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    width: 100%;
-                    transition: font-size 0.2s ease;
-                    color: white;
-                    font-size: 1.8vw;
-    
-                    &:hover {
-                        font-size: 2.2vw;
-                    }
-                }
-                div {
-                    overflow: hidden;
-                    transition: all 0.2s ease;
-                    filter: brightness(0.6);
-                    &:hover {
-                        transform: scale(1.5);
-                        filter: brightness(0.5);
-                    }
-                    img {
-                        width: 100%;
-                        display: flex;
-                        margin-bottom: 10%;
-                        overflow: hidden;
-                        margin: 0 auto;
-                    }
-                }
-            }
-        }
-    }
 }

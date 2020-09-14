@@ -2,7 +2,7 @@ export default {
     props: ['aboutInfo'],
 
     template: `
-    <div>
+    <div class="aboutInfoCon">
         <img :src="'images/' + aboutData.img + '.jpg'">
         <div class="aboutInfoContent">
             <h3>{{ aboutData.heading }}</h3>

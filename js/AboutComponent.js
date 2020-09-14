@@ -12,11 +12,11 @@ export default {
             <section id="aboutInfo">
                 <aboutInfo></aboutInfo>
             </section>
-            <section id="aboutServices">
-                <aboutServices></aboutServices>
-            </section>
             <section id="aboutCta">
                 <aboutCta></aboutCta>
+            </section>
+            <section id="aboutServices">
+                <aboutServices></aboutServices>
             </section>
         </div>
     </section>
