@@ -60,6 +60,10 @@
             p {
                 font-size: 2.4vw;
                 line-height: 3vw;
+
+                &:nth-child(3) {
+                    margin-top: 10%;
+                }
             }
         }
         .homeServIcons {
@@ -67,7 +71,7 @@
             flex-wrap: wrap;
             width: auto;
             padding: 0 17%;
-            margin-top: 5%;
+            margin-top: 8%;
 
             div {
                 width: 44%;
@@ -89,6 +93,7 @@
     }
 
     #homeTestimonials {
+        margin: 16% 0;
         .testimonialSlick {
             .slick-list {
                 .slick-track {
@@ -132,11 +137,14 @@
 
             .projectSlick {
                 margin: 0 auto 13%;
-                width: 60%;
+                width: 70%;
             }
 
             .slick-list {
                 border-radius: 3vw;
+                img {
+                    height: 43vh;
+                }
             }
 
             .slick-dots li button::before {
@@ -146,7 +154,7 @@
 
         .homeProjBtn {
             width: 22%;
-            border-radius: 1vw;
+            border-radius: 150vw;
             padding: 2.5% 0;
             font-size: 2.3vw;
         }
@@ -170,9 +178,294 @@
         }
         .homeCTABtn {
             width: 22%;
-            border-radius: 1vw;
+            border-radius: 150vw;
             padding: 2.1% 0 2.5%;
             font-size: 2.3vw;
+        }
+    }
+
+    #about {
+        .aboutHeader {
+            height: 35vh;
+        }
+
+        .aboutCon {
+            #aboutInfo {
+                div {
+                    img {
+                        width: 90%;
+                    }
+
+                    h3 {
+                        font-size: 4vw;
+                    }
+
+                    h4 {
+                        font-size: 2.8vw;
+                    }
+
+                    p {
+                        font-size: 2.4vw;
+                        line-height: 2.8vw;
+                        width: 90%;
+                    }
+                }
+            }
+
+            #aboutServices {
+                .aboutServicesCon {
+                    .aboutServiceContent {
+                        h4 {
+                            font-size: 4vw;
+
+                            &::after {
+                                width: 20%;
+                            }
+                        }
+
+                        p {
+                            font-size: 2.8vw;
+                            line-height: 3vw;
+                            width: 75%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+
+                .aboutServiceBtns {
+                    padding: 0 8%;
+                    justify-content: space-evenly;
+
+                    div {
+                        width: 30%;
+                        margin-top: 5%;
+
+                        &.highlighted {
+                            border-radius: 2vw;
+                        }
+                    }
+                }
+            }
+
+            #aboutCta {
+                div {
+                    img {
+                        width: 90%;
+                    }
+
+                    h3 {
+                        font-size: 4vw;
+                    }
+
+                    p {
+                        font-size: 2.4vw;
+                        line-height: 2.8vw;
+                        width: 90%;
+                    }
+
+                    a {
+                        width: 30%;
+                        padding: 3% 0 3%;
+                        font-size: 2.6vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #projects {
+        .lbCon {
+            .projLb {
+                margin: 1rem;
+
+                .lbTop {
+                    h2 {
+                        font-size: 3vw;
+                    }
+
+                    span {
+                        font-size: 2.6vw;
+                    }
+                }
+
+                .lbMain {
+                    h2 {
+                        font-size: 5vw;
+                    }
+
+                    h3 {
+                        margin-top: 8%;
+                        font-size: 2.4vw;
+                    }
+
+                    .lbSlick {
+                        width: 80%;
+
+                        .slick-list {
+                            .slick-track {
+                                height: 43vh;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 2.4vw;
+                        line-height: 2.8vw;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .projectHeader {
+                height: 35vh;
+                margin-bottom: 5%;
+        }
+
+        .filterBtns {
+            margin-top: 0;
+            padding: 0 10%;
+
+            div {
+                font-size: 2.1vw;
+                width: 20%;
+                padding: 3.2% 1.2% 3%;
+            }
+        }
+        .projectsCon {
+            margin-bottom: 5%;
+            margin-top: 2%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .project {
+                width: 47%;
+                margin: 3% auto 0;
+
+                &:hover {
+                    h3 {
+                        font-size: 4.6vw;
+                    }
+                }
+
+                h3 {
+                    font-size: 4vw;
+                }
+
+                div {
+                    img {
+                        height: 29vh;
+                    }
+                }
+            }
+        }
+    }
+
+    #services {
+        .servicesHeader {
+            height: 35vh;
+        }
+        .servicesCon {
+            display: flex;
+            flex-wrap: wrap;
+            width: 92%;
+            margin: 0 auto 5%;
+            .serviceInfo {
+                h3 {
+                    font-size: 3.8vw;
+                    &::after {
+                        height: 3px;
+                    }
+                }
+
+                p {
+                    width: 72%;
+                    font-size: 2.4vw;
+                    line-height: 2.8vw;
+                    margin: 8% auto 12%;
+                }
+            }
+
+            .serviceItem {
+                width: 45%;
+                padding-bottom: 0;
+                height: 54vh;
+                margin-bottom: 6%;
+
+                .banner {
+                    height: 15vh;
+                    img {
+                        width: 27%;
+                    }
+                }
+
+                h3 {
+                    font-size: 3.2vw;
+                }
+
+                p {
+                    padding: 0;
+                    line-height: 2.6vw;
+                    font-size: 2.2vw;
+                    width: 70%;
+                    margin: 9% auto 0;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .contactHeader {
+            height: 35vh;
+        }
+
+        .contactInfo {
+            padding: 2% 0;
+            div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                #contEmail {
+                    &::before {
+                        width: 65px;
+                    }
+                }
+
+                #contPhone {
+                    &::before {
+                        width: 40px;
+                        position: relative;
+                        right: 13%;
+                        margin-left: 0;
+                        padding-right: 0;
+                    }
+                }
+                a {
+                    h3 {
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+
+        .contactCon {
+            .formWrapper {
+                form {
+                    .contactInput {
+                        width: 60%;
+
+                        input, textarea {
+                            font-size: 3vw;
+                        }
+                    }
+
+                    button {
+                        width: 25%;
+                        padding: 2% 0 2%;
+                        font-size: 3vw;
+                    }
+                }
+            }
         }
     }
 }

@@ -3,6 +3,9 @@ import SingleProjectComponent from './modules/projectComponents/SingleProjectCom
 export default {
     template: `
     <section id="projects">
+        <div class="projectHeader">
+            <h2>What We've Done</h2>
+        </div>
         <div class="lbCon">
             <div class="projLb">
                 <div class="lbTop">
