@@ -39,7 +39,7 @@
         </div>
         <router-view></router-view>
     </main>
-    <!-- <ins class="adsbygoogle"
+    <ins class="adsbygoogle"
         style="display:block"
         data-ad-client="ca-pub-2397089338828705"
         data-ad-slot="4282714615"
@@ -47,7 +47,7 @@
         data-full-width-responsive="true"></ins>
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
-    </script> -->
+    </script>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
