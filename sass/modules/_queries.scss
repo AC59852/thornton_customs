@@ -147,6 +147,7 @@
         }
 
         #macy {
+            width: 70%;
             .box {
                 &:nth-child(n+4) {
                     display: block;
@@ -480,6 +481,7 @@
             width: 80%;
             img:nth-child(1), img:nth-child(3){
                 width: 6%;
+                margin-top: 0;
             }
 
             img:nth-child(1) {
@@ -525,7 +527,7 @@
         }
 
         p {
-            font-size: 2vw;
+            font-size: 1.8vw;
         }
     }
 
@@ -545,12 +547,12 @@
             }
 
             h2 {
-                font-size: 2.6vw;
+                font-size: 2.4vw;
             }
 
             p {
-                font-size: 1.4vw;
-                line-height: 1.8vw;
+                font-size: 1.3vw;
+                line-height: 1.5vw;
                 width: 65%;
             }
 
@@ -563,13 +565,13 @@
         .homeServIcons {
             margin-top: 0;
             padding: 0;
-            width: 43%;
+            width: 36%;
 
             div {
                 margin-top: 0;
                 width: 40%;
                 margin: 2.5% auto;
-                border-radius: 3vw;
+                border-radius: 2vw;
                 padding: 6% 2% 8%;
 
                 img {
@@ -594,8 +596,8 @@
                     .slick-slide {
                         p {
                             margin: 0 0 3%;
-                            font-size: 1.6vw;
-                            line-height: 2vw;
+                            font-size: 1.4vw;
+                            line-height: 1.8vw;
                             width: 65%;
                         }
 
@@ -615,32 +617,80 @@
             font-size: 2.6vw;
             margin-bottom: 8%;
         }
+
+        .homeProjBtn {
+            width: 13%;
+            padding: 1.5% 0;
+            font-size: 1.3vw;
+            margin: 4% auto 0;
+        }
+    }
+
+    #homeCTA {
+        margin-top: 10%;
+
+        h4  {
+            font-size: 2.4vw;
+            margin-bottom: 0;
+        }
+
+        .homeCTABtn {
+            width: 13%;
+            padding: 1.5% 0;
+            font-size: 1.3vw;
+            margin: 3% auto 0;
+        }
     }
 
     #services {
+        .servicesHeader {
+            margin-bottom: 6%;
+            h2 {
+                font-size: 4.6vw;
+            }                
+        }
         .servicesCon {
             display: flex;
             flex-wrap: wrap;
             width: 75%;
             margin: 0 auto;
 
+            .serviceInfo {
+                h3 {
+                    font-size: 2.4vw;
+
+                    &::after {
+                        width: 8%;
+                    }
+                }
+
+                p {
+                    width: 55%;
+                    font-size: 1.3vw;
+                    line-height: 1.6vw;
+                    margin: 6% auto 10%;
+                }
+            }
+
             .serviceItem {
                 width: 28%;
                 margin: 0 auto 6%;
                 background-color: rgba(231,231,231,.322);
-                border-radius: 1vw;
-                padding-bottom: 2%;
+                border-radius: 1.6vw;
+                padding-bottom: 4%;
                 box-shadow: 0px .5rem 1.5rem rgba(0,0,0,.3);
                 height: auto;
                 transition: height .4s ease;
                 overflow: hidden;
 
                 .banner {
-                    border-radius: 1vw 1vw 0vw 0vw;
+                    border-radius: 1.6vw 1.6vw 0vw 0vw;
                     padding: 0;
+                    height: 19vh;
+                    margin-bottom: 25%;
 
                     &:hover {
-                        padding: 4% 0;
+                        padding: 8% 0;
                     }
 
                     img {
@@ -650,11 +700,17 @@
                 }
 
                 h3 {
-                    font-size: 1.2vw;
+                    font-size: 1.4vw;
+
+                    &::after {
+                        width: 12%;
+                    }
                 }
 
                 p {
-                    line-height: 1vw;
+                    line-height: 1.4vw;
+                    font-size: 1.2vw;
+                    width: 75%;
                 }
             }
         }
@@ -717,6 +773,7 @@
                         p {
                             font-size: 1.2vw;
                             line-height: 1.4vw;
+                            width: 100%;
                         }
                     }
                     img {
@@ -727,11 +784,9 @@
             }
 
             #aboutServices {
-                order: -1;
-                margin-top: 0;
+                margin-top: 4%;
                 width: 100%;
                 padding: 0;
-                margin-top: 0;
                 margin-bottom: 10%;
                 .aboutServicesCon {
                     width: 100%;
@@ -783,7 +838,7 @@
     #projects {
         .projectHeader {
             h2 {
-                font-size: 5vw;
+                font-size: 4.6vw;
             }
         }
 
@@ -859,7 +914,7 @@
         .projectsCon {
             display: flex;
                 flex-wrap: wrap;
-                width: 70%;
+                width: 60%;
                 margin: 2% auto 0;
                 justify-content: center;
                 flex-direction: row;
@@ -903,7 +958,87 @@
                         margin-bottom: 10%;
                         overflow: hidden;
                         margin: 0 auto;
-                        height: 37vh;
+                        height: 32vh;
+                    }
+                }
+            }
+        }
+    }
+
+    #contact {
+        .contactHeader {
+            h2 {
+                font-size: 4vw;
+            }
+        }
+
+        .contactInfo {
+            padding: 0.5% 0 0;
+            margin-bottom: 3%;
+
+            div {
+                width: 65%;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                a {
+                    h3 {
+                        font-size: 1.8vw;
+                    }
+                }
+
+                #contEmail {
+                    &::before {
+                        width: 60px;
+                    }
+                }
+
+                #contPhone {
+                    &::before {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        .contactCon {
+            margin-bottom: 5%;
+            .formWrapper {
+                form {
+                    .contactInput {
+                        width: 35%;
+
+                        &:focus-within {
+                            div {
+                                width: 65%;
+                            }
+                        }
+
+                        div {
+                            width: 30%;
+                        }
+
+                        input {
+                            font-size: 1.6vw;
+                        }
+
+                        textarea {
+                            font-size: 1.2vw;
+                            height: 35vh;
+                            width: 100%;
+                            margin: 10% auto 0;
+
+                            &:focus {
+                                border-radius: 1vw;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 13%;
+                        padding: 1.5% 0;
+                        font-size: 1.3vw;
+                        margin: 3% auto 0;
                     }
                 }
             }

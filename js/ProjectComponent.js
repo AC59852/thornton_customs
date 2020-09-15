@@ -59,7 +59,7 @@ export default {
         setTimeout(function() {
             $('.lbCon').css('opacity', '1');
             $('.lbCon').css('display', 'none');
-        },50)
+        },100)
         
     },
 
@@ -125,8 +125,11 @@ export default {
                     arrows: false,
                     dots: true,
                     autoplay: true,
-                    autoplaySpeed: 4000,
-                    infinite: false
+                    autoplaySpeed: 2000,
+                    infinite: false,
+                    pauseOnFocus: false,
+                    pauseOnHover: false,
+                    lazyLoad: true
                 })
             })
         },

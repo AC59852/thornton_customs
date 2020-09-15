@@ -204,6 +204,7 @@
                 width: 100%;
                 height: auto;
                 display: block;
+                filter: brightness(0.9);
             }
 
             &:nth-child(n+4) {
@@ -227,7 +228,7 @@
         transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
         
         &:hover {
-            background-color: black;
+            background-color: $main-color;
             border: white solid 2px;
             color: white;
         }
@@ -264,9 +265,9 @@
             transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
             
             &:hover {
-                background-color: white;
+                background-color: $main-color;
                 border: transparent solid 2px;
-                color: black;
+                color: white;
             }
     }
 }
