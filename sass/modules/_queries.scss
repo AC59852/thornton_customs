@@ -1048,12 +1048,34 @@
 }
 
 @media screen and (min-width: 1680px) {
+    .header {
+        .topNavContent {
+            h2 {
+                margin-top: 0.5%;
+                font-size: 1.8vw;
+            }
+
+            img:nth-child(1), img:nth-child(3) {
+                width: 5%;
+            }
+
+            img:nth-child(1) {
+                width: 3% !important;
+            }
+        }
+    }
+
+    #slideshow {
+        h2 {
+            font-size: 5vw;
+        }
+    }
     #homeServices {
-        width: 90%;
+        width: 81%;
         margin: 7% auto 0;
         .homeServIcons {
             justify-content: center;
-            width: 65%;
+            width: 50%;
             padding: 0;
             div {
                 margin-top: 0;
@@ -1080,9 +1102,9 @@
         }
 
         .homeServText {
-            width: 65%;
+            width: 60%;
             h2 {
-                font-size: 2.4vw;
+                font-size: 2vw;
                 margin-bottom: 3%;
 
                 &::after {
@@ -1092,9 +1114,59 @@
             }
 
             p {
-                font-size: 1.1vw;
-                line-height: 1.5vw;
+                font-size: 1vw;
+                line-height: 1.3vw;
             }
+        }
+    }
+
+    #homeTestimonials {
+        .testimonialSlick {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        p {
+                            font-size: 1.2vw;
+                            line-height: 1.4vw;
+                            width: 60%;
+                        }
+
+                        h3 {
+                            font-size: 1.4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #homeProjects {
+        h2 {
+            font-size: 2vw;
+            margin-bottom: 5%;
+        }
+
+        #macy {
+            width: 65%;
+        }
+
+        .homeProjBtn {
+            width: 11%;
+            padding: 1.5% 0;
+            font-size: 1vw;
+            margin: 4% auto 0;
+        }
+    }
+
+    #homeCTA {
+        h4 {
+            font-size: 2vw;
+        }
+        
+        .homeCTABtn {
+            width: 11%;
+            padding: 1.5% 0;
+            font-size: 1vw;
         }
     }
 
