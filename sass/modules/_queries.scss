@@ -5,6 +5,12 @@
         }
     }
 
+    #homeProjects {
+        .homeProjBtn {
+            width: 45%;
+        }
+    }
+
     #homeServices {
         .homeServText {
             h2 {
@@ -17,6 +23,19 @@
 
             p {
                 font-size: 4vw;
+            }
+        }
+
+        .homeServIcons {
+            div {
+                width: 75%;
+                h3 {
+                    font-size: 4.6vw;
+                }
+
+                img {
+                    width: 55%;
+                }
             }
         }
     }
@@ -37,6 +56,9 @@
     }
 
     #about {
+        .aboutHeader {
+            height: 30vh;
+        }
         .aboutCon {
             #aboutInfo {
                 div {
@@ -83,6 +105,7 @@
             }
         }
     }
+
     #projects {
         .projectsCon {
             .project {
@@ -138,6 +161,7 @@
 
     #contact {
         .contactInfo {
+            padding: 6% 0;
             div {
                 a {
                     h3 {
@@ -155,6 +179,52 @@
                             font-size: 4.8vw;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 414px) {
+    #projects {
+        .projectsCon {
+            .project {
+                div {
+                    img {
+                        height: 350px;
+                    }
+                }
+            }
+        }
+
+        .lbCon {
+            .projLb {
+                .lbMain {
+                    p {
+                        font-size: 3.8vw;
+                        line-height: 4.6vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #services {
+        .servicesCon {
+            height: 440px;
+            .serviceItem {
+                width: 75%;
+                .banner {
+                    height: 130px;
+                }
+
+                p {
+                    width: 75%;
+                    line-height: 4.4vw;
+                    font-size: 3.6vw;
+                    width: 75%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
