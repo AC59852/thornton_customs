@@ -37,7 +37,8 @@ export default {
                     arrows: false,
                     dots: false,
                     autoplay: true,
-                    autoplaySpeed: 4000,
+                    autoplaySpeed: 3500,
+                    pauseOnHover: false,
                     fade: true,
                     speed: 1000
                 })

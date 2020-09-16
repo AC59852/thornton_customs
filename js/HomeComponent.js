@@ -7,7 +7,7 @@ export default {
     template: `
     <div>
         <hero></hero>
-        <homeServices></homeServices>
+        <homeServices class="waypoint"></homeServices>
         <homeTestimonials></homeTestimonials>
         <homeProjects></homeProjects>
         <aside id="homeCTA">
@@ -22,6 +22,28 @@ export default {
     data: function() {
         return {
 
+        }
+    },
+
+    mounted: function() {
+        this.waypoints();
+    },
+
+    methods: {
+        waypoints() {
+            var waypoint = new Waypoint({
+                element: document.querySelector('.waypoint'),
+                handler: function(direction) {
+                  console.log('Scrolled to waypoint!')
+                  let boxes = document.querySelectorAll('.homeServIcons div'),
+                      homeText = document.querySelectorAll('.homeServText p')
+                  let i = 0;
+                  boxes.forEach(box => {
+                      box.classList.add(`popin${i++}`);
+                  });
+                },
+                offset: 650
+              })
         }
     },
 

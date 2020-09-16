@@ -541,6 +541,7 @@
             flex-direction: column;
             width: 50%;
             margin: 0;
+            overflow: hidden;
 
             h2, h3, p {
                 width: 70%;
@@ -548,12 +549,17 @@
 
             h2 {
                 font-size: 2.4vw;
+                margin-top: 2%;
             }
 
             p {
                 font-size: 1.3vw;
                 line-height: 1.5vw;
                 width: 65%;
+            }
+
+            p:nth-child(3) {
+                margin-top: 6%;
             }
 
             p:nth-child(4) {
@@ -573,6 +579,7 @@
                 margin: 2.5% auto;
                 border-radius: 2vw;
                 padding: 6% 2% 8%;
+                transform: scale(0);
 
                 img {
                     width: 55%;
@@ -1162,7 +1169,7 @@
         h4 {
             font-size: 2vw;
         }
-        
+
         .homeCTABtn {
             width: 11%;
             padding: 1.5% 0;
@@ -1170,4 +1177,177 @@
         }
     }
 
+    #about {
+        .aboutHeader {
+            h2 {
+                font-size: 4vw;
+            }
+        }
+        .aboutCon {
+            #aboutCta {
+                width: 35%;
+                .aboutCtaCon {
+                    .aboutCtaContent {
+                        h3 {
+                            font-size: 1.6vw;
+                        }
+
+                        p {
+                            font-size: 1vw;
+                            line-height: 1.2vw;
+                        }
+                    }
+                }
+            }
+
+            #aboutServices {
+                .aboutServicesCon {
+                    width: 85%;
+                    justify-content: space-between;
+
+                    .aboutServiceContent {
+                        h4 {
+                            font-size: 2vw;
+                            &::after {
+                                top: 150%;
+                            }
+                        }
+
+                        p {
+                            margin-top: 10%;
+                            width: 90%;
+                            line-height: 1.2vw;
+                            font-size: 1.1vw;
+                        }
+                    }
+
+                    .aboutServiceBtns {
+                        width: 35%;
+                        margin-top: 0;
+
+                        div:nth-child(1), div:nth-child(2) {
+                            margin-bottom: 4%;
+                        }
+
+                        div {
+                            width: 30%;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+
+            #aboutInfo {
+                width: 35%;
+                .aboutInfoCon {
+                    .aboutInfoContent {
+                        h3 {
+                            font-size: 1.6vw;
+                        }
+
+                        p {
+                            font-size: 1vw;
+                            line-height: 1.2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .slick-dots {
+        margin-top: -6%;
+
+        li {
+            button {
+                &::before {
+                    font-size: 2.4vw !important;
+                }
+            }
+        }
+    }
+
+    #projects {
+        .lbCon {
+            .projLb {
+                margin: 2rem 10rem;
+                max-height: calc(100vh - 5rem);
+                .lbTop {
+                    h2 {
+                        font-size: 1.6vw;
+                    }
+
+                    span {
+                        font-size: 1.4vw;
+                    }
+                }
+
+                .lbMain {
+                    h2 {
+                        font-size: 2vw;
+
+                        &::after {
+                            width: 4%;
+                            height: 3px;
+                            margin-bottom: 5%;
+                        }
+                    }
+
+                    .lbSlick {
+                        width: 60%;
+
+                        .slick-list {
+                            border-radius: 1vw;
+                            .slick-track {
+                                height: 600px;
+                            }
+                        }
+                    }
+
+                    p {
+                        font-size: 1.1vw;
+                        line-height: 1.3vw;
+                        width: 50%;
+                        margin-top: 10%;
+                    }
+                }
+            }
+        }
+
+        .projectsCon {
+            .project {
+                div {
+                    img {
+                        height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+    #projects {
+
+        .filterBtns {
+            width: 53%;
+        }
+
+        .projectsCon {
+            width: 53%;
+
+            .project {
+                border-radius: 1vw;
+                &:hover {
+                    h3 {
+                        font-size: 1.7vw;
+                    }
+                }
+                h3 {
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
 }
