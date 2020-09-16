@@ -1,10 +1,159 @@
 @media screen and (min-width: 375px) {
+    #slideshow {
+        p {
+            font-size: 5vw;
+        }
+    }
+
+    #homeServices {
+        .homeServText {
+            h2 {
+                font-size: 5.4vw;
+
+                &::after {
+                    top: 160%;
+                }
+            }
+
+            p {
+                font-size: 4vw;
+            }
+        }
+    }
+
+    #homeTestimonials {
+        .testimonialSlick {
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        p {
+                            font-size: 4vw;
+                            line-height: 4.2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #about {
+        .aboutCon {
+            #aboutInfo {
+                div {
+                    h3 {
+                        font-size: 5.6vw;
+                    }
+
+                    p {
+                        font-size: 3.8vw;
+                        line-height: 4.6vw;
+                    }
+                }
+            }
+
+            #aboutCta {
+                div {
+                    h3 {
+                        font-size: 5.6vw;
+                    }
+
+                    p {
+                        font-size: 3.8vw;
+                        line-height: 4.6vw;
+                    }
+                }
+            }
+
+            #aboutServices {
+                .aboutServicesCon {
+                    .aboutServiceContent {
+                        height: 45vh;
+                        h4 {
+                            font-size: 6vw;
+                            &::after {
+                                width: 20%;
+                            }
+                        }
+
+                        p {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
     #projects {
         .projectsCon {
             .project {
                 div {
                     img {
                         height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    #services {
+        .servicesHeader {
+            height: 35vh;
+        }
+
+        .servicesCon {
+            .serviceInfo {
+                h3 {
+                    font-size: 5.6vw;
+                }
+
+                p {
+                    font-size: 3.9vw;
+                    line-height: 4.4vw;
+                }
+            }
+
+            .serviceItem {
+                padding-bottom: 0;
+                height: 465px;
+
+                .banner {
+                    height: 170px;
+
+                    img {
+                        width: 26%;
+                    }
+                }
+
+                h3 {
+                    font-size: 5.6vw;
+                }
+
+                p {
+                    line-height: 4.8vw;
+                    font-size: 3.9vw;
+                }
+            }
+        }
+    }
+
+    #contact {
+        .contactInfo {
+            div {
+                a {
+                    h3 {
+                        font-size: 4.4vw;
+                    }
+                }
+            }
+        }
+
+        .contactCon {
+            .formWrapper {
+                form {
+                    .contactInput {
+                        input {
+                            font-size: 4.8vw;
+                        }
                     }
                 }
             }

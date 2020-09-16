@@ -37,7 +37,7 @@
                     margin: 5% 0 10%;
                     &::before {
                         content: url(../images/email.svg);
-                        width: 20%;
+                        width: 17%;
                         display: flex;
                         padding-right: 2%;
                     }
@@ -49,7 +49,7 @@
                     margin: 0 0 5%;
                     &::before {
                         content: url(../images/phone.svg);
-                        width: 12%;
+                        width: 9%;
                         display: flex;
                         padding-right: 8%;
                         margin-left: 2%;
@@ -67,7 +67,7 @@
                     flex-direction: column;
 
                     .contactInput {
-                        width: 65%;
+                        width: 80%;
                         display: flex;
                         flex-direction: column;
                         margin: 0 auto;
@@ -78,7 +78,7 @@
 
                         &:focus-within {
                             div {
-                                width: 100%;
+                                width: 80%;
                             }
                         }
 
@@ -89,7 +89,7 @@
                             margin: 10% 0 0;
                             text-align: center;
                             font-family: $headings;
-                            font-size: 5vw;
+                            font-size: 5.2vw;
 
                             &:focus {
                                 outline: none !important;
@@ -149,7 +149,7 @@
                         transition: background-color 0.2s ease, border 0.2s ease, color 0.2s ease;
                         
                         &:hover {
-                            background-color: black;
+                            background-color: $main-color;
                             border: white solid 2px;
                             color: white;
                         }

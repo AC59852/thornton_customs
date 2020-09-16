@@ -16,7 +16,7 @@
       }
   }
     .filterBtns {
-      margin-top: 20%;
+      margin-top: 10%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -156,7 +156,7 @@
                       height: 2px;
                       background-color: black;
                       position: absolute;
-                      top: 150%;
+                      top: 160%;
                       left: 50%;
                       transform: translate(-50%, -50%);
                   }
@@ -190,8 +190,8 @@
                     width: 85%;
                     margin: 9% auto 0;
                     font-family: $paragraphs;
-                    line-height: 5.5vw;
-                    font-size: 4.6vw;
+                    line-height: 5.1vw;
+                    font-size: 4.2vw;
                 }
 
                 p:nth-child(5) {
